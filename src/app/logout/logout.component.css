@@ -1,0 +1,11 @@
+h1{
+    margin: 5px;
+    padding: auto;
+    color:red
+}
+div{
+    margin: 5px;
+    padding: auto;
+    color:black;
+    font-style: italic;
+}
