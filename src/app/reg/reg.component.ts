@@ -39,11 +39,10 @@ if (this.registerForm.invalid) {
 console.log(this.registerForm.value);
   localStorage.setItem('form-data', JSON.stringify(this.registerForm.value)); 
   this.router.navigate([`./logout`])
-  this.registerForm.getRawValue()['firstName']
-  this.registerForm.getRawValue()['lastName']
-  this.registerForm.getRawValue()['email']
-  this.registerForm.getRawValue()['dob']
-
+  localStorage.setItem('firstName', JSON.stringify(this.registerForm.value.firstName));
+  localStorage.setItem('lastName', JSON.stringify(this.registerForm.value.lastName));
+  localStorage.setItem('email', JSON.stringify(this.registerForm.value.email));
+  localStorage.setItem('dob', JSON.stringify(this.registerForm.value.dob)); 
 }
 
 
